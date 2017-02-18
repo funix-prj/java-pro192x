@@ -9,6 +9,9 @@ package com.hoangphan.session04;
  * @author hoangpt
  */
 class Greeting {
+  
+  Dog myDogs [];
+  Dog[] yourDogs = new Dog[7];
 
   /**
    * contructor method
