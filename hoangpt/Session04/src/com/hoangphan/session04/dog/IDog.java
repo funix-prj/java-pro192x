@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hoangphan.session04;
+package com.hoangphan.session04.dog;
 
 /**
  *
  * @author hoangpt
  */
-class Dog {
+public interface IDog {
+  
+  void bark();
+  
+  void makeLoveInStreet();
   
 }

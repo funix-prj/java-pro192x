@@ -5,6 +5,8 @@
  */
 package com.hoangphan.session04;
 
+import com.hoangphan.session04.dog.Dog;
+
 /**
  * @author hoangpt
  */
