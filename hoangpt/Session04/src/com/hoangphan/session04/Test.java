@@ -12,16 +12,16 @@ package com.hoangphan.session04;
 public class Test {
 
   public static void main(String[] args) {
-    int[][] myScores;
-
-    java.util.Random r = new java.util.Random();
-    int k = r.nextInt(100);
-    System.out.println("random is " + k);
-
-    String s = new String("Bicycle");
-    int iBegin = 1;
-    char iEnd = 3;
-    System.out.println(s.substring(iBegin, iEnd));
+//    int[][] myScores;
+//
+//    java.util.Random r = new java.util.Random();
+//    int k = r.nextInt(100);
+//    System.out.println("random is " + k);
+//
+//    String s = new String("Bicycle");
+//    int iBegin = 1;
+//    char iEnd = 3;
+//    System.out.println(s.substring(iBegin, iEnd));
 
     int[][][] x = new int[3][][];
     int i, j;
