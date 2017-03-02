@@ -41,11 +41,5 @@ public class Session03 {
     int nrCow = scaner.nextInt();
     
     System.out.println("You have "+nrCow+" cows");
-    
-    
-    
-    
-    
   }
-  
 }
