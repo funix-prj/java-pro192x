@@ -23,7 +23,7 @@ public class Officer extends Employee {
   
 
   @Override
-  int getAllowance() {
+  public int getAllowance() {
     if(position == POSITION_STAFF) {
       return 500;
     } else if(position == POSITION_VICE){
@@ -34,7 +34,7 @@ public class Officer extends Employee {
   }
 
   @Override
-  double calculateSalary() {
+  public double calculateSalary() {
     return salaryRatio*730 + getAllowance() + working_time*30;
   }
 

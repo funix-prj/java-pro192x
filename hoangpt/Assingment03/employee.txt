@@ -1,0 +1,2 @@
+Hoang|2500.0|Info
+Thuy|1234.0|Math

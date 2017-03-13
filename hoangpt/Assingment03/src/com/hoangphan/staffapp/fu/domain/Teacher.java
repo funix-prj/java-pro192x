@@ -5,6 +5,10 @@
  */
 package com.hoangphan.staffapp.fu.domain;
 
+import java.io.Serializable;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author hoangpt
@@ -38,25 +42,41 @@ public class Teacher extends Employee {
   int teaching_time;
 
   @Override
-  int getAllowance() {
+  public int getAllowance() throws Exception {
     if(degree == DEGREE_BACHELOR) {
       return 300;
     } else if(degree == DEGREE_MASTER){
       return 500;
-    } else { //validation
+    } else if (degree == DEGREE_DOCTOR) { //validation
       return 1000;
+    } else {
+      throw new Exception();
     }
   }
 
   @Override
-  double calculateSalary() {
+  public double calculateSalary() throws Exception {
+    if(salaryRatio < 0) return 0;
+    
     return 730*salaryRatio + getAllowance() + teaching_time *45;
   }
 
   @Override
   public String toString() {
-    return "Teacher{" + "name=" + name + ", salary=" + this.calculateSalary();
+    try {
+      return "Teacher{" + "name=" + name + ", salary=" + this.calculateSalary();
+    } catch (Exception ex) {
+      Logger.getLogger(Teacher.class.getName()).log(Level.SEVERE, null, ex);
+    }
+    
+    return null;
+  }
+
+  String hoho() {
+    return this.name;
   }
   
+  void login(String username, String password){
   
+  }
 }

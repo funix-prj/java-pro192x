@@ -5,17 +5,19 @@
  */
 package com.hoangphan.staffapp.fu.domain;
 
+import java.io.Serializable;
+
 /**
- *
+ * serial killer
  * @author hoangpt
  */
-public abstract class Employee {
+public abstract class Employee implements Serializable {
   
   public String name;
   public int salaryRatio;
   
-  abstract int getAllowance();
-  abstract double calculateSalary();
+  abstract public int getAllowance() throws Exception;
+  abstract public double calculateSalary() throws Exception;
   
   
 }
