@@ -2,13 +2,13 @@
  * package
  * @author hoangpt
  */
-package com.hoangphan;
+package com.hoangphan.tutor01;
 
 /**
  *
  * @author hoangpt
  */
-public class tutor01 {
+public class Main {
 
   /**
    * @param args the command line arguments

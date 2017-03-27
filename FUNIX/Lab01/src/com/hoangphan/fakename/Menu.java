@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * app FakeName
+ * @author hoangpt
  */
 package com.hoangphan.fakename;
 
@@ -15,13 +14,11 @@ import java.util.Scanner;
 public class Menu {
   
   public static void main(String[] args) {
-    
     new Menu().show();
   }
 
   private void show() {
     //Mini1: Show menu
-    
     System.out.println("1. FakeName & ID");
     System.out.println("2. Fake Mark");
     System.out.println("3. Calcualte");
@@ -37,6 +34,7 @@ public class Menu {
     int choice = scan.nextInt();
     
     if(choice == 1){
+      //Mini2
       generateStudent();
     } else if (choice == 2){
       
@@ -44,11 +42,11 @@ public class Menu {
     }
     
     
-    //print list
+    //print list, only check
     printName();
-    
   }
 
+  //array that contain static data 
   String[] firstNames = new String[]{
     "Hoang", "Thuy", "Ha", "Huong", "Binh"
   };
@@ -61,6 +59,7 @@ public class Menu {
     "Phan", "Tran", "Nguyen", "La", "Nghiem"
   };
   
+  //array that hold data of student: id and name
   int size = 3;
   String fullNames [] = new String[size];
   String xterIDs [] = new String[size];
@@ -75,7 +74,7 @@ public class Menu {
   }
 
   private void printName() {
-    System.out.println("--- Print list ---");
+    System.out.println("Log: --- Print list ---");
     for (int i = 0; i < fullNames.length; i++) {
       String fullName = fullNames[i];
       System.out.println(fullName);
@@ -86,30 +85,27 @@ public class Menu {
     Random random = new Random();
     //fake firstname
     int sizeFirstName = firstNames.length; //=5
-    int randomFirstName = random.nextInt(sizeFirstName-1);
-    
+    int randomFirstName = random.nextInt(sizeFirstName-1);    
     String firstName = firstNames[randomFirstName];
-    //System.out.println(firstName);
+    System.out.println("Log: " + firstName);
     
 
     //fake middlename
     int sizeMiddleName = middleNames.length; //=5
     int randomMiddleName = random.nextInt(sizeMiddleName-1);
-    
     String middleName = middleNames[randomMiddleName];
-    //System.out.println(middleName);
+    System.out.println("Log: " + middleName);
 
     //fake lastname
     int sizeLastName = lastNames.length; //=5
     int randomLastName = random.nextInt(sizeLastName-1);
-    
     String lastName = lastNames[randomLastName];   
-    //System.out.println(lastName);
+    System.out.println("Log: " + lastName);
     
     String fullName = firstName+" "+middleName+" "+ lastName;
-    //System.out.println(fullName);
+    System.out.println("Log: " + fullName);
     
-    
+    //add to array
     fullNames[index] = fullName;
   }
 }
