@@ -87,20 +87,20 @@ public class Menu {
     int sizeFirstName = firstNames.length; //=5
     int randomFirstName = random.nextInt(sizeFirstName-1);    
     String firstName = firstNames[randomFirstName];
-    System.out.println("Log: " + firstName);
+    System.out.println("Log: "+ randomFirstName+ "|" + firstName);
     
 
     //fake middlename
     int sizeMiddleName = middleNames.length; //=5
     int randomMiddleName = random.nextInt(sizeMiddleName-1);
     String middleName = middleNames[randomMiddleName];
-    System.out.println("Log: " + middleName);
+    System.out.println("Log: " + randomMiddleName+ "|" +middleName);
 
     //fake lastname
     int sizeLastName = lastNames.length; //=5
     int randomLastName = random.nextInt(sizeLastName-1);
     String lastName = lastNames[randomLastName];   
-    System.out.println("Log: " + lastName);
+    System.out.println("Log: " + randomLastName+ "|" + lastName);
     
     String fullName = firstName+" "+middleName+" "+ lastName;
     System.out.println("Log: " + fullName);
