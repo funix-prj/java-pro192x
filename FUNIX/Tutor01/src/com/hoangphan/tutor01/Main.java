@@ -49,6 +49,16 @@ public class Main {
       String nameInArr = names[i];
       System.out.println(nameInArr);
     }
+    
+    
+    //String, Scanner, Random
+    Spymen men = new Spymen();
+    men.sayHello("Huong");
+    men.sayHello(name);
+    
+    men.hideName();
+    System.out.println("Chao ban "+men.fakeName+" @3*%&^");
+    
   }
 
   /**
